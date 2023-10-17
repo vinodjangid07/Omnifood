@@ -364,7 +364,6 @@ h3{
 .meals-showcase li{
     display: block;
     width: 25%;
-    float: left;
 }
 .meal-photo{
     width: 100%;

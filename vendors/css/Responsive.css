@@ -66,6 +66,9 @@ html{
     html {
         font-size: 50%;
     }
+    .section{
+        padding: 40px 0;
+    }
     body{
         overflow-x:hidden ;
     }
@@ -199,10 +202,54 @@ html{
         transform-origin: left;
         transition-duration: .3s;
         background-color: var(--color-black);
-    
-    
     }
- 
+    
+    .app-download-image-container{
+        height: 500px;
+    }
+    .mobile-app-container{
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        height: fit-content;
+    }
+    .mobile-app-image{
+        height: 400px;
+
+    }
+    .mobile-shadow{
+        margin-right: 40px;
+        width: 100px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.845);
+        filter: blur(30px);
+        animation: float-shadow 3s linear both infinite ;
+    }
+    @keyframes float-shadow{
+        0%{
+            margin-right: 0px;
+            width: 230px;
+            height: 30px;
+            filter: blur(30px);
+        }
+        50%{
+            
+            margin-right: 0px;
+            width: 100px;
+            height: 20px;
+            filter: blur(10px);
+        }
+        100%{
+            margin-right: 0px;
+            width: 230px;
+            height: 30px;
+            filter: blur(30px);
+        }
+    }
+    
+
 }
 
 @media screen and (max-width:500px) {
@@ -221,6 +268,14 @@ html{
 @media screen and (max-width:375px) {
     html {
         font-size: 40%;
+    }
+    .app-download-image-container{
+        height: 400px;
+    }
+    .mobile-app-image{
+        height:300px;
+        padding: 0;
+
     }
 }
 @media screen and (max-width:300px) {
