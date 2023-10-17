@@ -1,0 +1,231 @@
+
+
+html{
+    font-weight: 300;
+    font-size: 62.5%;
+}
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 60%;
+    }
+    .feature-text,.header-text,.Navbar-Container{
+        width: 90%;
+    }
+    .row{
+        width: 90%;
+    }
+    .feature-description{
+        grid-template-columns: 1fr 1fr;
+    }
+    .mobile-app-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .app-download-image-container{
+        height: 550px;
+        width: 100%;
+        align-items: center;
+    }
+    @keyframes float-shadow{
+        0%{
+            margin-right: 0px;
+            width: 300px;
+            height: 30px;
+            filter: blur(30px);
+        }
+        50%{
+            
+            margin-right: 0px;
+            width: 140px;
+            height: 20px;
+            filter: blur(10px);
+        }
+        100%{
+            margin-right: 0px;
+            width: 300px;
+            height: 30px;
+            filter: blur(30px);
+        }
+    }
+    .three-simple-steps{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:980px) {
+    html {
+        font-size: 55%;
+    }
+    .feature-description{
+        grid-template-columns: 1fr;
+    }
+   
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    body{
+        overflow-x:hidden ;
+    }
+    .show-overlay{
+        display: unset;
+    }
+    .stopscrolling{
+        overflow: hidden;
+    }
+    .Navbar-Container{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .logo-white{
+        height: 80px;
+        padding: 0;
+    }
+    .fixednav .logo-white{
+       
+        padding-left: 20px;
+    }
+    .main-nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        z-index: 99998;
+        background-color: white;
+        padding: 120px 25px 25px 25px;
+        transition:all .3s;
+
+    }
+    .main-nav li{
+     
+        display: unset;
+        margin-left: 0px;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        height: fit-content;
+        color: black;
+
+    }
+    .fixednav .Navbar-Container .main-nav li a{
+        color: black;
+        padding: 8px 0;
+    }
+    .show-toggle-menu{
+        right: 0;
+    }
+    .hamburger{
+        /* display: block; */
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 200px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 99999;
+        background-color:transparent;
+    }
+    .hamburgerbase{
+        width: 80%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    #hamburger-button{
+        font-size: 3rem;
+        font-weight: 800;
+        width: 4.5rem;
+        height: 3.5rem;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #burger-bar1{
+        width: 60%;
+        height:3px;
+        border-radius: 0px;
+        transition-duration: .3s;
+    }
+    #burger-bar2{
+        width: 100%;
+        height:3px;
+        border-radius: 0px;
+        transition-duration: .3s;
+    
+    }
+    #burger-bar3
+    {
+        width: 60%;
+        height:3px;
+        border-radius: 0px;
+        transition-duration: .3s;
+    
+    }
+    .burger-bar{
+        background-color: var(--color-white);
+        
+    }
+    
+    .hamburger-animation1{
+        transform: rotate(45deg) scaleX(1.7);
+        transition-duration: .3s;
+        transform-origin: left;
+        background-color: var(--color-black);
+    
+    } 
+    .hamburger-animation2{
+       transform: scaleX(0);
+        background-color: var(--color-black);
+    
+        
+    }
+    .hamburger-animation3{
+        transform: rotateZ(-45deg) scaleX(1.7);
+        transform-origin: left;
+        transition-duration: .3s;
+        background-color: var(--color-black);
+    
+    
+    }
+ 
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 45%;  
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    html {
+        font-size: 43%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media screen and (max-width:300px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+
