@@ -1,3 +1,11 @@
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 1500); 
+});
+
 
 // toggle between navbar fixed and relative positions
     window.addEventListener('scroll', () => {

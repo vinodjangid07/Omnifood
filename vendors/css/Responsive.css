@@ -71,6 +71,7 @@ html{
     }
     .show-overlay{
         display: unset;
+        z-index: 9995;
     }
     .stopscrolling{
         overflow: hidden;
@@ -99,7 +100,7 @@ html{
         gap: 50px;
         z-index: 99998;
         background-color: white;
-        padding: 120px 25px 25px 25px;
+        padding: 120px 35px 25px 35px;
         transition:all .3s;
 
     }
