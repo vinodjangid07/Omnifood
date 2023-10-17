@@ -71,6 +71,7 @@ function hidetogglemenu(){
   document.querySelector('.dark-overlay').classList.remove("show-overlay");
   }
   console.log('%c Redesigned and Redeveloped by Vinod Jangid ', 'background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;');
+  
 // close mobile toggle menu by clicking on LI
 function hidemenubyli(){
   document.body.classList.remove("stopscrolling");

@@ -59,7 +59,28 @@ html{
     .feature-description{
         grid-template-columns: 1fr;
     }
-   
+    .all-cities-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    @keyframes scroll {
+        from{
+            transform: translateX(10%);
+            
+        }
+        to{
+            transform: translateX(-10%);
+        }
+    }
+    @keyframes scroll-reverse {
+        from{
+            
+            transform: translateX(-10%);
+        }
+        to{
+            transform: translateX(10%);
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -248,26 +269,64 @@ html{
             filter: blur(30px);
         }
     }
-    
+    .all-cities-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .tweets-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .tweets-row-one, .tweets-row-three{
+      
+        animation: scroll 8s linear alternate-reverse infinite;
+    }
+    .tweets-row-two{
+        animation: scroll-reverse 7s linear alternate-reverse infinite;
+    }
+    @keyframes scroll {
+        from{
+            transform: translateX(50%);
+            
+        }
+        to{
+            transform: translateX(-50%);
+        }
+    }
+    @keyframes scroll-reverse {
+        from{
+            
+            transform: translateX(-50%);
+        }
+        to{
+            transform: translateX(50%);
+        }
+    }
 
 }
 
 @media screen and (max-width:500px) {
     html {
-        font-size: 45%;  
+        font-size: 47%;  
+    }
+    h1{
+        font-size: 4.3rem;
+    }
+    h2{
+        font-size: 3.5rem;
     }
 
 }
 
 @media screen and (max-width:430px) {
     html {
-        font-size: 43%;
+        font-size: 45%;
     }
 }
 
 @media screen and (max-width:375px) {
     html {
-        font-size: 40%;
+        font-size: 43%;
     }
     .app-download-image-container{
         height: 400px;
