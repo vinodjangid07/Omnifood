@@ -551,7 +551,7 @@ h3{
     gap: 30px;
 }
 .testimonial-section{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(/resource/image/pizza-slices-food.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(img/pizza-slices-food.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
