@@ -551,7 +551,7 @@ h3{
     gap: 30px;
 }
 .testimonial-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resource/image/back-customers.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resource/image/back-customers.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
