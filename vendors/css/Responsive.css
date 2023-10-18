@@ -259,37 +259,16 @@ html{
     }
     .mobile-app-image{
         height: 400px;
-
+        animation: none;
     }
     .mobile-shadow{
         margin-right: 40px;
-        width: 100px;
-        height: 30px;
+        width: 200px;
+        height: 25px;
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.845);
         filter: blur(30px);
-        animation: float-shadow 3s linear both infinite ;
-    }
-    @keyframes float-shadow{
-        0%{
-            margin-right: 0px;
-            width: 230px;
-            height: 30px;
-            filter: blur(30px);
-        }
-        50%{
-            
-            margin-right: 0px;
-            width: 100px;
-            height: 20px;
-            filter: blur(10px);
-        }
-        100%{
-            margin-right: 0px;
-            width: 230px;
-            height: 30px;
-            filter: blur(30px);
-        }
+        animation: none;
     }
     .all-cities-container{
         grid-template-columns: 1fr;
