@@ -504,6 +504,17 @@ h3{
 .city-grid-box{
     width: 100%;
 }
+.city-grid-box{
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.122);
+}
+.city-grid-box h3{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.cities-data{
+    padding-left: 20px;
+}
 .city-grid-box img{
     width: 100%;
     margin-bottom: 5px;
@@ -532,66 +543,239 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ddd;
 }
-.tweets-container{
-    margin-top: 75px;
+.feedback-row-container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.testimonial-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.799), rgba(0, 0, 0, 0.7)), url(/resource/image/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.feedback-heading-row h2{
+    color: white;
+}
+.feedback-container{
     width: 100%;
-    overflow: scroll;
-    padding: 20px 0 20px 0;
-    display: flex;
+}
+blockquote{
 
+    display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    position: relative;
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
 }
-.tweets-container::-webkit-scrollbar{
-    width: 0;
-    display: none;
+blockquote img{
+    width: 50px;
+    border-radius: 50%;
 }
-.tweets-container::-webkit-scrollbar-track {
-    width: 0;
-    display: none;
+blockquote::before {
+    content: "\201C";
+    font-size: 10rem;
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: -5px;
+    font-family: "lato" ,"arial",sans-serif;
 }
-.tweets-container::-webkit-scrollbar-thumb{
-    width: 0;
-    display: none;
- }
-.tweets-row-one, .tweets-row-three{
-    width: fit-content;
+cite{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 40px;
-    animation: scroll 3s linear alternate-reverse infinite;
-}
-.tweets-row-one img, .tweets-row-two img, .tweets-row-three img{
-    height: 120px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.114);
-    border-radius: 30px;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
-@keyframes scroll {
-    from{
-        transform: translateX(40%);
-    }
-    to{
-        transform: translateX(-40%);
-    }
-}
-.tweets-row-two{
-    width: fit-content;
+.plan-row-container-wrapper{
+    margin-top: 75px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 40px;
-    animation: scroll-reverse 3s linear alternate-reverse infinite;
 }
-@keyframes scroll-reverse {
-    from{
-        
-        transform: translateX(-40%);
-    }
-    to{
-        transform: translateX(40%);
-    }
+.plan-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
 }
+.plan-card{
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.122);
+    display: flex;
+    flex-direction: column;
+}
+.plan-price-box{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ff62002c;
+}
+
+.plan-price-box h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.plan-price{
+    font-size: 5rem;
+    color: #ff6200;
+}
+.plan-price span{
+    font-size: 2rem;
+}
+.per-meal-price{
+    font-size: 2rem;
+    color: #2c2c2c;
+}
+.plan-details-box{
+    padding: 20px;
+    width: 100%;
+}
+.plan-details-box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.plan-details-box ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 2rem;
+}
+.plan-details-box ul li svg{
+    height: 2rem;
+    /* fill: #5b5b5b; */
+    fill: #ff6200;
+}
+.cross-svg path{
+    fill: #ff62006c;
+}
+
+.sign-up-button-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.signupBtn {
+    z-index: 3;
+    font-size: 1.9rem;
+    font-weight: 400;
+    padding-bottom: 2px;
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap: 9px;
+    color: white;
+    background: linear-gradient(to right,#ff6200,#ff3300);
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+    text-decoration: none;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 7.5px;
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+   .arrow {
+    animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse infinite;
+  }
+  
+  .sign-up-button-border:hover .arrow{
+    animation: slide-in-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .sign-up-button-border{
+    color: #ff3300;
+    background: linear-gradient(transparent,transparent);
+    border:2px solid #ff3300;
+    box-shadow: none;
+  }
+  .sign-up-button-border .arrow{
+    animation: none;
+
+  }
+.plan-card{
+    position: relative;
+    overflow: hidden;
+}
+  
+  
+.plan-card:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    z-index: 2;
+  }
+  
+  .plan-card:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    z-index: 2;
+  }
+  
+ 
+  
+  .plan-card:hover:before {
+    border-color:  #ff6200;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .plan-card:hover:after {
+    border-color: #ff6200;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  

@@ -4,6 +4,21 @@ html{
     font-weight: 300;
     font-size: 62.5%;
 }
+@media screen and (max-width:1400px) {
+    .plan-row{
+        gap: 30px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .plan-row{
+        gap: 20px;
+    }
+}
+@media screen and (max-width:1250px) {
+    .plan-row{
+        gap: 10px;
+    }
+}
 @media screen and (max-width:1200px) {
     html {
         font-size: 60%;
@@ -50,8 +65,22 @@ html{
     .three-simple-steps{
         width: 100%;
     }
+    .plan-row{
+        gap: 30px;
+    }
 }
-
+@media screen and (max-width:1050px) {
+    .plan-row-container-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .plan-row{
+        width: 350px;
+        grid-template-columns: 1fr;
+    }
+    
+}
 @media screen and (max-width:980px) {
     html {
         font-size: 55%;
@@ -63,24 +92,17 @@ html{
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-    @keyframes scroll {
-        from{
-            transform: translateX(10%);
-            
-        }
-        to{
-            transform: translateX(-10%);
-        }
+    .feedback-row-container{
+        grid-template-columns: 1fr;
+        gap: 60px;
     }
-    @keyframes scroll-reverse {
-        from{
-            
-            transform: translateX(-10%);
-        }
-        to{
-            transform: translateX(10%);
-        }
+    blockquote::before {
+        top: -45px;
     }
+    blockquote{
+        gap: 20px;
+    }
+ 
 }
 
 @media screen and (max-width:768px) {
@@ -124,7 +146,7 @@ html{
         gap: 50px;
         z-index: 99998;
         background-color: white;
-        padding: 120px 35px 25px 35px;
+        padding: 120px 35px 35px 35px;
         transition:all .3s;
 
     }
@@ -273,34 +295,8 @@ html{
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    .tweets-container{
-        align-items: center;
-        justify-content: center;
-    }
-    .tweets-row-one, .tweets-row-three{
-      
-        animation: scroll 8s linear alternate-reverse infinite;
-    }
-    .tweets-row-two{
-        animation: scroll-reverse 7s linear alternate-reverse infinite;
-    }
-    @keyframes scroll {
-        from{
-            transform: translateX(50%);
-            
-        }
-        to{
-            transform: translateX(-50%);
-        }
-    }
-    @keyframes scroll-reverse {
-        from{
-            
-            transform: translateX(-50%);
-        }
-        to{
-            transform: translateX(50%);
-        }
+    .signupBtn{
+        width: 130px;
     }
 
 }
@@ -314,6 +310,13 @@ html{
     }
     h2{
         font-size: 3.5rem;
+    }
+    .plan-row{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .signupBtn{
+        width: 120px;
     }
 
 }
