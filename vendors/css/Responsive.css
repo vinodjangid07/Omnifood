@@ -148,6 +148,7 @@ html{
         background-color: white;
         padding: 120px 35px 35px 35px;
         transition:all .3s;
+        border-bottom-left-radius: 20px;
 
     }
     .main-nav li{
