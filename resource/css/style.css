@@ -779,6 +779,87 @@ cite{
     transition: .3s transform linear, .3s height linear .5s;
   }
 
+  /* Contact form code starts from here */
+  .form-section{
+    background-color: #eeeeee;
+  }
+  .form-container{
+    margin-top: 75px;
+  }
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+  }
+  .input-container{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .input-container label{
+    width:50%;
+    font-size: 2rem;
+  }
+  .input-container input[type="text"]{
+    width: 50%;
+    height: 100%;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.016);
+    caret-color: #ff6200;
+  }
+  .input-container input:focus{
+    /* background-color: #ff620025; */
+    border: 1px solid #ff6200;
+  }
+  ::-webkit-input-placeholder{
+    color: #838383;
+    letter-spacing: 0.5px;
+  }
+  select{
+    height: 100%;
+    width: 50%;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.016);
+    color: #2d2d2d;
+  }
+  select:focus{
+    border: 1px solid #ff6200;
+  }
+  #yesPlease{
+    margin-left: 10px;
+    width: unset;
+    cursor: pointer;
+  }
+  textarea{
+    height: 100%;
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.016);
+    caret-color: #ff6200;
+  }
+  textarea:focus{
+    border: 1px solid #ff6200;
+  }
+
+
+  
+  /* footer code starts from here */
   footer{
     width: 100%;
     display: flex;
