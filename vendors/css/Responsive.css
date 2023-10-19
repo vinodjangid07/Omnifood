@@ -277,6 +277,10 @@ html{
     .signupBtn{
         width: 130px;
     }
+    .social svg{
+        fill: white;
+        height: 2.7rem;
+      }
 
 }
 
